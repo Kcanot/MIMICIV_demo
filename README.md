@@ -23,18 +23,23 @@ BigQuery (sandbox) pour l'extraction SQL, Python (Colab) pour l'analyse et le ML
 3. Renseigner l'ID du projet et du dataset (voir `.env.example`).
 4. Exécuter les requêtes de `sql/` depuis les notebooks.
 
-## Structure
-repo/
-├─ README.md
-├─ requirements.txt
-├─ .gitignore
-├─ .env.example        # modèle de configuration, sans valeur secrète
-├─ docs/
-│  └─ schema.md        # schéma de relations
-├─ sql/                # une requête = un fichier .sql
-├─ src/                # code Python réutilisable (client BigQuery, chargement CSV, nettoyage)
-├─ notebooks/          # EDA et ML
-└─ exports/            # petits agrégats pour Tableau 
+## Structure du dépôt
+
+```text
+MIMICIV_demo/
+├── README.md              Présentation, reproduction, crédits
+├── requirements.txt       Dépendances Python
+├── .gitignore             Fichiers exclus (données, secrets)
+├── .env.example           Modèle de configuration, sans secret
+├── docs/
+│   ├── schema.svg         Schéma des relations (affiché dans le README)
+│   └── schema.md          Même schéma en Mermaid, avec notes de lecture
+├── sql/                   Requêtes BigQuery, une par fichier .sql
+├── src/                   Code Python réutilisable (client BigQuery, nettoyage)
+├── notebooks/             Analyse exploratoire et machine learning
+├── ref/                   Listes de référence (ex. antibiotiques et classes)
+└── exports/               Petits agrégats pour Tableau
+```
 
 ## Limites
 Échantillon de 100 patients, dates décalées par patient (pas de dates absolues).
