@@ -20,3 +20,9 @@ venv/
 .vscode/
 .idea/
 .DS_Store
+
+# Windows
+Thumbs.db
+
+# Exports : on garde seulement les petits agrégats finaux
+!exports/*.csv
