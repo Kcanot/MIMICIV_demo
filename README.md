@@ -33,7 +33,6 @@ MIMICIV_demo/
 ├── .env.example           Modèle de configuration, sans secret
 ├── docs/
 │   ├── schema.svg         Schéma des relations (affiché dans le README)
-│   └── schema.md          Même schéma en Mermaid, avec notes de lecture
 ├── sql/                   Requêtes BigQuery, une par fichier .sql
 ├── src/                   Code Python réutilisable (client BigQuery, nettoyage)
 ├── notebooks/             Analyse exploratoire et machine learning
